@@ -1,0 +1,21 @@
+{
+  "type" : "record",
+  "name" : "notification",
+  "namespace" : "org.kaaproject.dreamNotifier",
+  "fields" : [ {
+    "name" : "message",
+    "type" : {
+      "type" : "string",
+      "avro.java.string" : "String"
+    },
+    "displayName" : "Message",
+    "displayPrompt" : "Message for broadcast"
+  }, {
+    "name" : "repeat",
+    "type" : [ "int", "null" ],
+    "displayName" : "Repeat",
+    "displayPrompt" : "Number of times to repeat the message",
+    "by_default" : 1,
+    "maxLength" : 2
+  } ]
+}`
